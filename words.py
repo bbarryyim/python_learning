@@ -10,13 +10,16 @@ def fetch_words(url):
                 story_words.append(word)
     return story_words
 
+
 def print_words(s_words):
     for words in s_words:
         print (words)
 
+
 def main(url):
     words = fetch_words(url)
     print_words(words)
+
 
 if __name__ == '__main__':
     main(sys.argv[1])
