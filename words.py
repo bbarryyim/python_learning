@@ -7,9 +7,15 @@ def fetch_words():
             line_words = line.decode('utf-8').split()
             for word in line_words:
                 story_words.append(word)
+    return story_words
 
-    for words in story_words:
+def print_words(s_words):
+    for words in s_words:
         print (words)
 
+def main():
+    words = fetch_words()
+    print_words(words)
+
 if __name__ == '__main__':
-    fetch_words()
+    main()
